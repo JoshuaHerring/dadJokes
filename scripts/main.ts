@@ -38,6 +38,7 @@ function displayQuote(quote: Array<string>) {
     let lead : HTMLElement | null = document.getElementById("lead")
     if (lead) lead.innerHTML = ""
     let punch : HTMLElement | null = document.getElementById("punch")
+    punch?.classList.add("invisible")
     if (punch) punch.innerHTML = ""
     for(let i = 0; i < quote.length - 1; i++){
         if (lead) lead.innerHTML += quote[i]
@@ -62,8 +63,8 @@ button?.addEventListener("click", () => {
 let newJoke : HTMLElement | null = document.getElementById("new")
 
 newJoke?.addEventListener("click", () => {
-    let punch : HTMLElement | null = document.getElementById("punch")
-    punch?.classList.add("invisible")
+    // let punch : HTMLElement | null = document.getElementById("punch")
+    // punch?.classList.add("invisible")
 
     getJoke()
 

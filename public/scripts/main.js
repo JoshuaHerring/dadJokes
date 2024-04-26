@@ -45,6 +45,7 @@ function displayQuote(quote) {
     if (lead)
         lead.innerHTML = "";
     let punch = document.getElementById("punch");
+    punch === null || punch === void 0 ? void 0 : punch.classList.add("invisible");
     if (punch)
         punch.innerHTML = "";
     for (let i = 0; i < quote.length - 1; i++) {
@@ -64,7 +65,7 @@ button === null || button === void 0 ? void 0 : button.addEventListener("click",
 });
 let newJoke = document.getElementById("new");
 newJoke === null || newJoke === void 0 ? void 0 : newJoke.addEventListener("click", () => {
-    let punch = document.getElementById("punch");
-    punch === null || punch === void 0 ? void 0 : punch.classList.add("invisible");
+    // let punch : HTMLElement | null = document.getElementById("punch")
+    // punch?.classList.add("invisible")
     getJoke();
 });
