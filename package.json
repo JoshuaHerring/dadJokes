@@ -1,0 +1,15 @@
+{
+  "name": "week01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tail": "tailwindcss -i styles/style.css -o public/styles/style.css --watch",
+    "type": "tsc --outDir public/scripts --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
